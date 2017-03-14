@@ -92,11 +92,12 @@ let titleDoc = require('html-loader!markdown-loader!./docs/title.md');
    <ng-sample-box [ts]="demos.container.component" [html]="demos.container.html">
     <demo-dropdown-container></demo-dropdown-container>
   </ng-sample-box>
-  
-  <h2 routerLink="." fragment="keyboard" id="keyboard">Single button with keyboard nav</h2>
-   <ng-sample-box [ts]="demos.keyboard.component" [html]="demos.keyboard.html">
-    <demo-dropdown-keyboard></demo-dropdown-keyboard>
-  </ng-sample-box>
+
+  <!-- not availavle in bs-dropdown version -->
+  <!--<h2 routerLink="." fragment="keyboard" id="keyboard">Single button with keyboard nav</h2>-->
+   <!--<ng-sample-box [ts]="demos.keyboard.component" [html]="demos.keyboard.html">-->
+    <!--<demo-dropdown-keyboard></demo-dropdown-keyboard>-->
+  <!--</ng-sample-box>-->
     
   <h2 routerLink="." fragment="dropup" id="dropup">Dropup variation</h2>
   <p>Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent element.</p>
@@ -111,9 +112,10 @@ let titleDoc = require('html-loader!markdown-loader!./docs/title.md');
   </ng-sample-box>
   
   <h2 routerLink="." fragment="api-reference" id="api-reference">API Reference</h2>
-  <ng-api-doc id="dropdown-directive" directive="DropdownDirective"></ng-api-doc>
-  <ng-api-doc id="dropdown-toggle-directive" directive="DropdownToggleDirective"></ng-api-doc>
-  <ng-api-doc-config id="dropdown-config" type="DropdownConfig"></ng-api-doc-config>
+  <ng-api-doc id="dropdown-directive" directive="BsDropdownDirective"></ng-api-doc>
+  <ng-api-doc id="dropdown-menu-directive" directive="BsDropdownMenuDirective"></ng-api-doc>
+  <ng-api-doc id="dropdown-toggle-directive" directive="BsDropdownToggleDirective"></ng-api-doc>
+  <ng-api-doc-config id="dropdown-config" type="BsDropdownConfig"></ng-api-doc-config>
 </demo-section>`
 })
 export class DropdownSectionComponent {

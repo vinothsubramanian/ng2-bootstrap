@@ -1,4 +1,3 @@
-import { DropdownDemoComponent } from './dropdown-demo.component';
 import { DemoDropdownBasicComponent } from './basic/basic';
 import { DemoDropdownSplitComponent } from './split/split';
 import { DemoDropdownContainerComponent } from './container/container';
@@ -11,7 +10,7 @@ import { DemoDropdownDisabledComponent } from './disabled-menu/disabled-menu';
 import { DemoDropdownAlignmentComponent } from './alignment/menu-alignment';
 
 export const DEMO_COMPONENTS = [
-  DropdownDemoComponent, DemoDropdownBasicComponent, DemoDropdownBasicLinkComponent, DemoDropdownSplitComponent,
+  DemoDropdownBasicComponent, DemoDropdownBasicLinkComponent, DemoDropdownSplitComponent,
   DemoDropdownContainerComponent, DemoDropdownKeyboardComponent, DemoDropdownConfigComponent, DemoDropupComponent,
   DemoDropdownTriggersManualComponent, DemoDropdownDisabledComponent, DemoDropdownAlignmentComponent
 ];
